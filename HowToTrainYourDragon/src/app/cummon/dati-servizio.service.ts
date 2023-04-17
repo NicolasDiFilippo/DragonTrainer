@@ -7,14 +7,15 @@ import { Observable } from 'rxjs';
 })
 
 export class DatiServizioService {
+  [x: string]: any;
 
  constructor(public http:HttpClient) { }
 
   getDati(): void {
       this.http.get('../../assets/draghi.json').subscribe(dato =>{
+        
         console.log(dato);
       });
   }
-
 }
 

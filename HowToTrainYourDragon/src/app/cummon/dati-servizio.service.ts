@@ -11,7 +11,7 @@ export class DatiServizioService {
  constructor(public http:HttpClient) { }
 
   getDati(): void {
-      this.http.get('./draghi.json').subscribe(dato =>{
+      this.http.get('../../assets/draghi.json').subscribe(dato =>{
         console.log(dato);
       });
   }

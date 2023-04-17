@@ -12,6 +12,10 @@ export class VisualizzaDraghiComponent {
 
   }
 
+  ngOnInit(){
+    this.Dati();
+  }
+  
   Dati(){
     return console.log(this.dati.getDati());
   }

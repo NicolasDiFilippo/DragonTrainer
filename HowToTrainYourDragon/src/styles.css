@@ -66,6 +66,7 @@ body{
 .content button:hover{
     box-shadow: inset 100px 0 0 0 #ffff;
     color: #052c6f;
+    font-size: 21px;
 }
 
 

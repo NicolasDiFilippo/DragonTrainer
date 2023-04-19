@@ -464,7 +464,7 @@ export class VisualizzaDraghiComponent {
   
   Dati(){
     
-    return console.log(this.dati.getd(this.vett));
+    return console.log(this.dati.getDati());
   }
 
 

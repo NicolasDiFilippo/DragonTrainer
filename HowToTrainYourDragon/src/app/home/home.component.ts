@@ -17,6 +17,6 @@ export class HomeComponent {
 
   Dati(){
     this.dati['/draghi'];
-    return console.log(this.dati.getd(this.vet));
+    return console.log(this.dati.getDati());
   }
 }

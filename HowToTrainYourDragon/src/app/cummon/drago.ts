@@ -15,10 +15,9 @@ export class Drago {
         stealth: string ;
         description: string ;
         image: string ;
-        classImage: string ;
 
         constructor(id:Drago, name: Drago, species : Drago, classe: Drago, attack: Drago, speed: Drago, armor: Drago, firepower: Drago, shotLimit: Drago, 
-                    venom: Drago, jawStrength: Drago, stealth: Drago, description: Drago, image: Drago, classImage: Drago){
+                    venom: Drago, jawStrength: Drago, stealth: Drago, description: Drago, image: Drago){
                 
                         this.id = id.id;
                         this.name = name.name;
@@ -34,7 +33,6 @@ export class Drago {
                         this.stealth = stealth.stealth;
                         this.description = description.description;
                         this.image = image.image;
-                        this.classImage = classImage.classImage;
             }
     
 }

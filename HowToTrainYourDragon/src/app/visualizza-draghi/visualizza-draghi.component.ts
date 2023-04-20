@@ -24,8 +24,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Very High",
         "description": "Loyal and empathic with boundless, puppy-like energy",
-        "image": "https://ibb.co/z6xDD4L",
-        "classImage": "https://ibb.co/3CM22XP"
+        "image": "https://i.ibb.co/5cWfvDv/toothless.png"
     },
     {
         "id": 2,
@@ -41,8 +40,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Medium",
         "description": "Precise and cunning in battle, yet warm and affectionate with friends old and new",
-        "image": "https://ibb.co/JnGcvd9",
-        "classImage": "https://ibb.co/JKNmX66"
+        "image": "https://i.ibb.co/y6Qd7NM/stormfly.png"
     },
     {
         "id": 3,
@@ -58,8 +56,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Maximum",
         "description": "Truly a split personality! Barf & Belch are each fiercely independent, yet inextricably linked",
-        "image": "https://ibb.co/W60vcYX",
-        "classImage": "https://ibb.co/cCfDP5P"
+        "image": "https://i.ibb.co/0csG94D/barf-belch.png"
     },
     {
         "id": 4,
@@ -75,8 +72,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Low",
         "description": "A loyal, lava-launching helper -- when he isn't napping",
-        "image": "https://ibb.co/ZG03SZP",
-        "classImage": "https://ibb.co/VphFy0p"
+        "image": "https://i.ibb.co/rd7rt3H/grump.png"
     },
     {
         "id": 5,
@@ -92,8 +88,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Low",
         "description": "Incendiary in temperament and short on patience, Hookfang would rather ignite 1st and think 2nd",
-        "image": "https://ibb.co/VYSxLGX",
-        "classImage": "https://ibb.co/8bNCsRY"
+        "image": "https://i.ibb.co/mBRBgbq/hookfang.png"
     },
     {
         "id": 6,
@@ -109,8 +104,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Very High",
         "description": "The feline-like Light Fury is gentle and playful by nature, like Toothless, but fiercely protective when danger is present",
-        "image": "https://ibb.co/CnYt8rS",
-        "classImage": "https://ibb.co/3CM22XP"
+        "image": "https://i.ibb.co/JvFv6nY/lightfury.png"
     },
     {
         "id": 7,
@@ -126,8 +120,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Low",
         "description": "Exceedingly demonstrative and sweet, yet quite self-conscious despite her thick hide",
-        "image": "https://ibb.co/4SPQJsJ",
-        "classImage": "https://ibb.co/VphFy0p"
+        "image": "https://i.ibb.co/94hdmQw/meatlug.png"
     },
     {
         "id": 8,
@@ -143,8 +136,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "N/A",
         "stealth": "N/A",
         "description": "Proud and confident",
-        "image": "https://ibb.co/0JznPFj",
-        "classImage": "https://ibb.co/PFjPKk6"
+        "image": "https://i.ibb.co/7GrcLjC/cloudjumper.png"
     },
     {
         "id": 9,
@@ -160,8 +152,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "N/A",
         "description": "Doggedly determined when he's caught a scent",
-        "image": "https://ibb.co/B6rZb4X",
-        "classImage": "https://ibb.co/JKNmX66"
+        "image": "https://i.ibb.co/n72wXH8/skullcrusher.png"
     },
     {
         "id": 10,
@@ -177,8 +168,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Very Low",
         "description": "Metal-Plated Plunderer",
-        "image": "https://ibb.co/Np6X5W9",
-        "classImage": "https://ibb.co/cCfDP5P"
+        "image": "https://i.ibb.co/KGH3v67/armorwing.png"
     },
     {
         "id": 11,
@@ -194,8 +184,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Very Low",
         "description": "Volcanic & valiant",
-        "image": "https://ibb.co/MZdm4mk",
-        "classImage": "https://ibb.co/VphFy0p"
+        "image": "https://i.ibb.co/p3CnmSf/eruptodon.png"
     },
     {
         "id": 12,
@@ -211,8 +200,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Low",
         "description": "Shy at first, but great as allies once trust is built",
-        "image": "https://ibb.co/8P0gHDZ",
-        "classImage": "https://ibb.co/8bNCsRY"
+        "image": "https://i.ibb.co/PZSyR7p/nightterror.png"
     },
     {
         "id": 13,
@@ -228,8 +216,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Very Low",
         "description": "Masters of the sneak attack",
-        "image": "https://ibb.co/brRD9gT",
-        "classImage": "https://ibb.co/9pPgDmm"
+        "image": "https://i.ibb.co/frHvWhp/seashocker.png"
     },
     {
         "id": 14,
@@ -245,8 +232,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Low",
         "description": "Belligerent and as unpredictable as lightning strikes",
-        "image": "https://ibb.co/DVSLb7d",
-        "classImage": "https://ibb.co/3CM22XP"
+        "image": "https://i.ibb.co/d57y1hz/skrill.png"
     },
     {
         "id": 15,
@@ -262,8 +248,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "High",
         "stealth": "Maximum",
         "description": "Temptation and terror to the fourth power",
-        "image": "https://ibb.co/ZcNzyfj",
-        "classImage": "https://ibb.co/cCfDP5P"
+        "image": "https://i.ibb.co/0hpntjr/snaptrapper.png"
     },
     {
         "id": 16,
@@ -279,8 +264,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Low",
         "description": "Inquisitive and curious animals, their only downfall is their territorial in-fighting",
-        "image": "https://ibb.co/ZXLvNJq",
-        "classImage": "https://ibb.co/8bNCsRY"
+        "image": "https://i.ibb.co/xzShfxj/terribleterror.png"
     },
     {
         "id": 17,
@@ -296,8 +280,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "Low",
         "description": "Strident and assertive, the loud Thunderdrum always makes its feelings known",
-        "image": "https://ibb.co/nbFY2tG",
-        "classImage": "https://ibb.co/9pPgDmm"
+        "image": "https://i.ibb.co/Z2fFHWV/thunderdrum.png"
     },
     {
         "id": 18,
@@ -313,8 +296,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Low",
         "description": "Modest serenity balanced with fierce protection of their riders",
-        "image": "https://ibb.co/QQycCHJ",
-        "classImage": "https://ibb.co/PFjPKk6"
+        "image": "https://i.ibb.co/dKz3w1q/timberjack.png"
     },
     {
         "id": 19,
@@ -330,8 +312,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Low",
         "description": "Blindly aggressive and capable of holding a grudge like no other dragon",
-        "image": "https://ibb.co/kHd6HgD",
-        "classImage": "https://ibb.co/VphFy0p"
+        "image": "https://i.ibb.co/W2c9JPk/whisperingdeath.png"
     },
     {
         "id": 20,
@@ -347,8 +328,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Very Low",
         "description": "Bouncing boulders of joy that need lots of sleep, food, and attention",
-        "image": "https://ibb.co/2ZkW46D",
-        "classImage": "https://ibb.co/VphFy0p"
+        "image": "https://i.ibb.co/0DSPdQv/babygronckle.png"
     },
     {
         "id": 21,
@@ -364,8 +344,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Very Low",
         "description": "Quick, Curious, and prone to temper-tantrums - Like the toddlers of the dragon world",
-        "image": "https://ibb.co/tccLp46",
-        "classImage": "https://ibb.co/JKNmX66"
+        "image": "https://i.ibb.co/dWbMqg0/babynadder.png"
     },
     {
         "id": 22,
@@ -381,8 +360,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Low",
         "description": "Double Trouble",
-        "image": "https://ibb.co/2tY10wc",
-        "classImage": "https://ibb.co/cCfDP5P"
+        "image": "https://i.ibb.co/bvLZQ2f/babyzippleback.png"
     },
     {
         "id": 23,
@@ -398,8 +376,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very High",
         "stealth": "N/A",
         "description": "Scarred and bred for battle",
-        "image": "https://ibb.co/B298NzZ",
-        "classImage": "https://ibb.co/9pPgDmm"
+        "image": "https://i.ibb.co/tq17NCc/dragobewilderbeast.png"
     },
     {
         "id": 24,
@@ -415,8 +392,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very High",
         "stealth": "N/A",
         "description": "The benevolent and leonine king of all dragons",
-        "image": "https://ibb.co/cC5fk3n",
-        "classImage": "https://ibb.co/9pPgDmm"
+        "image": "https://i.ibb.co/82wq8wT/valkabewilderbeast.png"
     },
     {
         "id": 25,
@@ -432,8 +408,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Low",
         "stealth": "N/A",
         "description": "Enticing and siren-like, this species of dragon is decidedly solitary",
-        "image": "https://ibb.co/QKBRQBj",
-        "classImage": "https://ibb.co/cCfDP5P"
+        "image": "https://i.ibb.co/tmyR22K/deathsong.png"
     },
     {
         "id": 26,
@@ -449,8 +424,7 @@ export class VisualizzaDraghiComponent {
         "jawStrength": "Very Low",
         "stealth": "Very Low",
         "description": "Imitative",
-        "image": "https://ibb.co/ysvb2c2",
-        "classImage": "https://ibb.co/cCfDP5P"
+        "image": "https://i.ibb.co/k4P8t8Y/dramillion.png"
     }
 ];
 

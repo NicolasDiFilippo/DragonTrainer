@@ -101,4 +101,5 @@ video{
 
 .nav-item:hover{
     background-color: #052c6f;
+    cursor: pointer; 
 }

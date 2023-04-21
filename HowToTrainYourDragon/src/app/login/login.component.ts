@@ -11,20 +11,32 @@ export class LoginComponent {
 
   nome: string="";
   password: string="";
-  testoBottone: string;
+  testoBottone1: string;
+  testoBottone2: string;
 
   constructor(public service:DatiServizioService, public router:Router){
     
-    this.testoBottone = "";
+    this.testoBottone1 = "";
+    this.testoBottone2 = "";
     this.service.setAbilita(false);
   }
 
   abilita()
   {
-    if(this.nome == "" || this.password == "" ){
-      this.testoBottone = "inserisci la password e/o il nome utente";
+    if(this.password == ""){
+      this.testoBottone1 = "inserisci la password";
+    }else{
+      this.testoBottone1 = "";
     }
-    else{
+
+    if(this.nome == "" ){
+      this.testoBottone2 = "inserisci il nome utente";
+    }else{
+      this.testoBottone2 = "";
+    }
+
+
+    if(this.nome && this.password != ""){
       this.router.navigate(['/', 'Home']);
     }
        

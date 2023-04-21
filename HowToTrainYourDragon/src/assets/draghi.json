@@ -81,7 +81,7 @@
     },
     {
         "id": 6,
-        "name": "",
+        "name": "/",
         "species": "Light Fury",
         "classe": "Strike",
         "attack": "High",
@@ -145,7 +145,7 @@
     },
     {
         "id": 10,
-        "name": "",
+        "name": "/",
         "species": "Armor Wing",
         "classe": "Mystery",
         "attack": "Low",
@@ -161,7 +161,7 @@
     },
     {
         "id": 11,
-        "name": "",
+        "name": "/",
         "species": "Eruptodon",
         "classe": "Boulder",
         "attack": "Low",
@@ -177,7 +177,7 @@
     },
     {
         "id": 12,
-        "name": "",
+        "name": "/",
         "species": "Night Terror",
         "classe": "Stocker",
         "attack": "Very Low",
@@ -193,7 +193,7 @@
     },
     {
         "id": 13,
-        "name": "",
+        "name": "/",
         "species": "Seashocker",
         "classe": "Tidal",
         "attack": "Low",
@@ -209,7 +209,7 @@
     },
     {
         "id": 14,
-        "name": "",
+        "name": "/",
         "species": "Skrill",
         "classe": "Strike",
         "attack": "Low",
@@ -225,7 +225,7 @@
     },
     {
         "id": 15,
-        "name": "",
+        "name": "/",
         "species": "Snaptrapper",
         "classe": "Mystery",
         "attack": "Low",
@@ -241,7 +241,7 @@
     },
     {
         "id": 16,
-        "name": "",
+        "name": "/",
         "species": "Terrible Terror",
         "classe": "Stocker",
         "attack": "Low",
@@ -257,7 +257,7 @@
     },
     {
         "id": 17,
-        "name": "",
+        "name": "/",
         "species": "Thunderdrum",
         "classe": "Tidal",
         "attack": "Low",
@@ -273,7 +273,7 @@
     },
     {
         "id": 18,
-        "name": "",
+        "name": "/",
         "species": "Timberjack",
         "classe": "Sharp",
         "attack": "Low",
@@ -289,7 +289,7 @@
     },
     {
         "id": 19,
-        "name": "",
+        "name": "/",
         "species": "Whispering Death",
         "classe": "Boulder",
         "attack": "Low",
@@ -385,7 +385,7 @@
     },
     {
         "id": 25,
-        "name": "",
+        "name": "/",
         "species": "Death Song",
         "classe": "Mystery",
         "attack": "Low",
@@ -401,7 +401,7 @@
     },
     {
         "id": 26,
-        "name": "",
+        "name": "/",
         "species": "Dramillion",
         "classe": "Mystery",
         "attack": "Low",

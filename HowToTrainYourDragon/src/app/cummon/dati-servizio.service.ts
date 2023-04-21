@@ -7,16 +7,27 @@ import { Observable } from 'rxjs';
 })
 
 export class DatiServizioService {
-  [x: string]: any;
+  autorizzato: boolean;
 
-  
- constructor(public http:HttpClient) { }
+  constructor(public http: HttpClient) {
+    this.autorizzato=false;
+   }
 
   getDati(): Observable<any> {
-      // this.http.get('../../assets/draghi.json').subscribe(dato =>{
-      //   console.log(dato);
-      // });
-      return this.http.get('/assets/draghi.json');
+
+    // this.http.get('../../assets/draghi.json').subscribe(dato =>{
+    //   console.log(dato);
+    // });
+    return this.http.get('/assets/draghi.json');
   }
+
+  setAbilita(stato: boolean) {
+    this.autorizzato = stato;
+  }
+
+  getAbilita(): boolean {
+    return this.autorizzato;
+  }
+
 }
 

@@ -15,7 +15,6 @@ export class AppComponent {
 
   }
   Dati(){
-    this.dati['/draghi'];
     return console.log(this.dati.getDati());
   }
 

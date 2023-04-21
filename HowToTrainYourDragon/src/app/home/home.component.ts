@@ -9,14 +9,12 @@ import { DatiServizioService } from '../cummon/dati-servizio.service';
 
 export class HomeComponent {
 
-  vet : any;
 
   constructor(public dati:DatiServizioService){
 
   }
 
   Dati(){
-    this.dati['/draghi'];
     return console.log(this.dati.getDati());
   }
 }

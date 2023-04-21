@@ -6,13 +6,16 @@ import { VisualizzaDraghiComponent } from './visualizza-draghi/visualizza-draghi
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     VisualizzaDraghiComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
     
   ],
   imports: [
@@ -21,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     HttpClientModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

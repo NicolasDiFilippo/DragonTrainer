@@ -10,15 +10,15 @@ export class DatiServizioService {
   autorizzato: boolean;
 
   constructor(public http: HttpClient) {
-    this.autorizzato=false;
-   }
+    this.autorizzato = false;
+  }
 
   getDati(): Observable<any> {
-
-    // this.http.get('../../assets/draghi.json').subscribe(dato =>{
-    //   console.log(dato);
-    // });
     return this.http.get('/assets/draghi.json');
+  }
+
+  getDatiV(): Observable<any> {
+    return this.http.get('/assets/vichinghi.json');
   }
 
   setAbilita(stato: boolean) {

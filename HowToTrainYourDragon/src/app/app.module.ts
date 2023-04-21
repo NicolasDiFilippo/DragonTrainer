@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { VisualizzaVichinghiComponent } from './visualizza-vichinghi/visualizza-vichinghi.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     VisualizzaDraghiComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    VisualizzaVichinghiComponent
     
   ],
   imports: [

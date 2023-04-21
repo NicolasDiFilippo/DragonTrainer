@@ -38,8 +38,8 @@ export class LoginComponent {
 
     if(this.nome && this.password != ""){
       this.router.navigate(['/', 'Home']);
-    }
-       
+      this.service.setAbilita(true);
       
+    }
   }
 }

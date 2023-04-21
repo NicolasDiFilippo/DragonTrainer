@@ -12,12 +12,11 @@ export class DatiServizioService {
   
  constructor(public http:HttpClient) { }
 
-  getDati(): void {
-      this.http.get('../../assets/draghi.json').subscribe(dato =>{
-        console.log(dato);
-      });
-
-
+  getDati(): Observable<any> {
+      // this.http.get('../../assets/draghi.json').subscribe(dato =>{
+      //   console.log(dato);
+      // });
+      return this.http.get('/assets/draghi.json');
   }
 }
 

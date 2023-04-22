@@ -17,10 +17,6 @@ export class DatiServizioService {
     return this.http.get('/assets/draghi.json');
   }
 
-  getDatiV(): Observable<any> {
-    return this.http.get('/assets/vichinghi.json');
-  }
-
   setAbilita(stato: boolean) {
     this.autorizzato = stato;
   }

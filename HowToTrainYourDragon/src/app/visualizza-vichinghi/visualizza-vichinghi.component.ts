@@ -9,15 +9,15 @@ import { DatiServizioService } from '../cummon/dati-servizio.service';
 })
 export class VisualizzaVichinghiComponent {
   listaVichinghi!: Vichingo[];
-
-  vett:any;
   constructor(public dati:DatiServizioService){
+    
   }
 
   ngOnInit(){
-    this.dati.getDatiV().subscribe(dati=>{
+    this.dati.getDati().subscribe(dati=>{
         this.listaVichinghi = dati;
-    })
+    });
+
   }
   
   Dati(){

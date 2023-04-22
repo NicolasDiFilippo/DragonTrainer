@@ -10,9 +10,9 @@ export class Vichingo {
     hair: string ;
     weapon: string ;
     location: string ;
-    image: string;
+    imageV: string;
     constructor(id:Vichingo, firstName: Vichingo, lastName : Vichingo, tribe: Vichingo, gender: Vichingo, height: Vichingo, eyes: Vichingo, hair: Vichingo, weapon: Vichingo, 
-        location: Vichingo, image: Vichingo){
+        location: Vichingo, imageV: Vichingo){
             
                     this.id = id.id;
                     this.firstName = firstName.firstName;
@@ -24,7 +24,7 @@ export class Vichingo {
                     this.weapon = weapon.weapon;
                     this.location = location.location;
                     this.gender = gender.gender;
-                    this.image = image.image;
+                    this.imageV = imageV.imageV;
         }
 
 }

@@ -7,11 +7,12 @@ import { VisualizzaVichinghiComponent } from './visualizza-vichinghi/visualizza-
 
 const routes: Routes = [
 
-  { path: "", component: LoginComponent},
+  
+  { path:"Login", component: LoginComponent},
   { path: "Home", component: HomeComponent },
   { path: "Draghi", component: VisualizzaDraghiComponent },
-  { path: "Vichinghi", component: VisualizzaVichinghiComponent }
-  
+  { path: "Vichinghi", component: VisualizzaVichinghiComponent },
+  { path: "", redirectTo: 'Login', pathMatch: 'full'}
 ];
 
 @NgModule({

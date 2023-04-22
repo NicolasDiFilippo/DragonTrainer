@@ -1,20 +1,20 @@
-    <section class="vh-100">
+    <section class="vh-50 mt-5">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+              <div class=" shadow-2-strong" style="border-radius: 1rem;">
                 <div class="card-body p-5 text-center pb-3">
       
-                  <h3 class="mb-5">Sign in</h3>
+                  <h3 class="mb-5 text-light">Sign in</h3>
       
                   <div class="form-outline mb-4">
-                    <input type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="User"  [(ngModel)]="nome"/>
-                    <h1 class="form-text text-center fs-3 text pb-3 text-danger">{{testoBottone2}}</h1>
+                    <input [ngClass]="stile2" type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="User"  [(ngModel)]="nome"/>
+                    <h1 class="form-text text-center fs-2 text pb-3 text-danger">{{testoBottone2}}</h1>
                   </div>
       
                   <div class="form-outline mb-5">
-                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="password"  [(ngModel)]="password"/>
-                    <h1 class="form-text text-center fs-3 text pb-3 text-danger">{{testoBottone1}}</h1>
+                    <input [ngClass]="stile1" type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="password"  [(ngModel)]="password"/>
+                    <h1 class="form-text text-center fs-2 text text-danger">{{testoBottone1}}</h1>
                 </div>
       
                   <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="abilita()">Login</button>
@@ -27,7 +27,7 @@
       </section>
 
       <div id="bg">
-        <video autoplay loop preload="auto" width="100%" height="100%">
-          <source src="../../assets/video/login.mp4" type="video/mp4">
+        <video muted preload="auto" width="100%" height="100%" loop="true" autoplay="autoplay">
+          <source src="../../assets/video/videoNuvoleLogin.mp4" type="video/mp4">
         </video>
       </div>

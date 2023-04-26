@@ -11,7 +11,7 @@
         <li class="nav-item">
           <a class="nav-link mt-4" id="scritta" routerLink="/Vichinghi"><b> VIKINGS </b> </a>
         </li>
-        <input class="nav-link mt-4  " type="text" [(ngModel)]="currentDragonName" placeholder="Search by name..." (change)="cambiaDrago()">
+        <input class="nav-link mt-4" [ngClass]="cerca" type="text" [(ngModel)]="currentDragonName" placeholder="Search by name..." (disabled)="disattivo" (change)="cambiaDrago()">
       </ul>
     </div>
   </div>
@@ -20,8 +20,7 @@
 <br>
 
 <div [ngClass]="vedi">
-
-
+  
   <div *ngIf="currentDragon != null" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
     <div class="row">
       <div class="col-md-4">

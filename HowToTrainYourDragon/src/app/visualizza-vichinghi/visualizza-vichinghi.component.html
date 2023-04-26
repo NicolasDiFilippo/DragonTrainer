@@ -11,12 +11,40 @@
         <li class="nav-item">
           <a class="nav-link mt-4" id="scritta"><b> VIKINGS </b> </a>
         </li>
+        <input class="nav-link mt-4" [ngClass]="cerca" type="text" [(ngModel)]="currentVichingoName" placeholder="Search by name..." (disabled)="disattivo" (change)="cambiaVichingo()">
       </ul>
     </div>
   </div>
 </nav>
 
 <br>
+
+<div [ngClass]="vedi">
+
+  <div *ngIf="currentVichingo != null" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
+    <div class="row">
+      <div class="col-md-4">
+        <img [src]="currentVichingo.imageV" class="img-fluid" alt="drago">
+      </div>
+      <div class="col-md-8 bg-light p-4 border-bottom border-danger">
+        <div class="card-body p-5 ">
+          <h5 class="card-title pb-4 fs-1"><b>{{currentVichingo.firstName}} {{currentVichingo.lastName}}</b></h5>
+          <p class="card-text pb-2"><u>tribe</u>: {{currentVichingo.tribe}}</p>
+          <p class="card-text pb-2"><u>gender</u>: {{currentVichingo.gender}}</p>
+          <p class="card-text pb-2"><u>height</u>: {{currentVichingo.height}}</p>
+          <p class="card-text pb-2"><u>eyes</u>: {{currentVichingo.eyes}}</p>
+          <p class="card-text pb-2"><u>hair</u>: {{currentVichingo.hair}}</p>
+          <p class="card-text pb-2"><u>weapon</u>: {{currentVichingo.weapon}}</p>
+          <p class="card-text pb-2"><u>location</u>: {{currentVichingo.location}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div *ngIf="avanti">
 
 <div *ngFor="let dati of listaVichinghi; let i = index">
   <div *ngIf="i>=26">
@@ -38,7 +66,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div *ngIf="i%2==0" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
@@ -63,7 +90,7 @@
     </div>
   </div>
 </div>
-
+</div>
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted">

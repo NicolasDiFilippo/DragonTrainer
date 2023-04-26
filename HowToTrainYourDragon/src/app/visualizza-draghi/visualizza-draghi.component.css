@@ -37,3 +37,18 @@ a:hover{
 .no{
     display: block;
 }
+
+
+.stile{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+
+.stile:focus{
+    border: 0px solid red;
+}
+
+.stile2{
+    border: 0px solid red;
+}

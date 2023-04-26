@@ -10,9 +10,13 @@ import { Drago } from '../cummon/drago';
 export class VisualizzaDraghiComponent {
 
     listaDraghi!: Drago[];
-
-  vett:any;
+    currentDragon!: Drago;
+    currentDragonName: string = '';
+    avanti = true;
+    vedi: string;
+    
   constructor(public dati:DatiServizioService){
+    this.vedi = "";
   }
 
   ngOnInit(){
@@ -24,6 +28,31 @@ export class VisualizzaDraghiComponent {
   Dati(){
     
     return console.log(this.dati.getDati());
+  }
+
+  cambiaDrago()
+  {
+    if(this.currentDragonName == ''){
+      this.avanti = true;
+      this.vedi = "vedi2";
+    }else{
+      this.vedi = "no";
+    }
+
+    
+
+    for (let index = 0; index < this.listaDraghi.length && this.avanti; index++)
+    {
+      if (this.listaDraghi[index].name.toUpperCase() == this.currentDragonName.toUpperCase())
+      {
+        this.currentDragon = this.listaDraghi[index];
+        console.log(this.currentDragon);
+        this.avanti = false;
+
+      }
+    }
+
+   
   }
 
 

@@ -29,3 +29,11 @@
 a:hover{
     color: #ffffff;
 }
+
+.vedi2{
+    display: none;
+}
+
+.no{
+    display: block;
+}

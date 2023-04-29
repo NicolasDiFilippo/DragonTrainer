@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DatiServizioService } from '../cummon/dati-servizio.service';
 import { Drago } from '../cummon/drago';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-visualizza-draghi',
@@ -17,15 +18,19 @@ export class VisualizzaDraghiComponent {
     disattivo: boolean = false;
     cerca: string;
     
-  constructor(public dati:DatiServizioService){
+  constructor(public dati:DatiServizioService, private service:DatiServizioService, public router:Router){
     this.vedi = "";
     this.cerca = "";
+
   }
 
   ngOnInit(){
     this.dati.getDati().subscribe(dati=>{
         this.listaDraghi = dati;
     })
+      if(this.service.getAbilita() == false){
+        this.router.navigate(['/', 'Login']);
+      }
   }
   
   Dati(){

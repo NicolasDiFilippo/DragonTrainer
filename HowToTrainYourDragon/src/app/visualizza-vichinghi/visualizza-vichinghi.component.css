@@ -34,18 +34,17 @@ a:hover{
     display: none;
 }
 
-.no{
+.no2{
     display: block;
 }
 
-
-.stile{
+.stile2{
     border: 2px solid red;
     border-radius: 4px;
 }
 
 
-.stile:focus{
+.stile2:focus{
     border: 0px solid red;
 }
 

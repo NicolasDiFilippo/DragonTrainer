@@ -2,7 +2,7 @@
 export class Drago {
     
         id:number;
-        name: string;
+        name: string ;
         species : string;
         classe: string;
         attack: string;

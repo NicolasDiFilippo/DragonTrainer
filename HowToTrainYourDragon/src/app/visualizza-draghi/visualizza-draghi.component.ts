@@ -29,6 +29,7 @@ export class VisualizzaDraghiComponent {
     this.dati.getDati().subscribe(dati => {
       this.listaDraghi = dati;
     })
+    
     if (this.service.getAbilita() == false) {
       this.router.navigate(['/', 'Login']);
     }

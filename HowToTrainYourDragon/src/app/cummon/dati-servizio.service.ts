@@ -17,7 +17,7 @@ export class DatiServizioService {
   getDati(): Observable<any> {
     return this.http.get('/assets/draghi.json');
   }
-
+  
   setAbilita(stato: boolean) {
     this.autorizzato = stato;
     

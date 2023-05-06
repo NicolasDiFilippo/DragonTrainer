@@ -25,6 +25,9 @@ export class LoginComponent {
     this.service.setAbilita(false);
   }
 
+  ngOnInit(){
+    
+  }
   abilita()
   {
 
@@ -34,15 +37,17 @@ export class LoginComponent {
     }else{
       this.stile2 = "";
       this.testoBottone2 = "";
-    }
-    if(this.nome.length < 5){
-      this.stile2 = "stile";
-      this.testoBottone2 = "il nome utente dev'essere composto da almeno 5 caratteri";
-    }else {
-      this.stile2 = "";
-      this.testoBottone2 = "";
       this.okNome = true;
     }
+
+    // if(this.nome.length < 5){
+    //   this.stile2 = "stile";
+    //   this.testoBottone2 = "il nome utente dev'essere composto da almeno 5 caratteri";
+    // }else if (this.nome.length >= 5 ){
+    //   this.stile2 = "";
+    //   this.testoBottone2 = "";
+    //   this.okNome = true;
+    // }
 
     if(this.password.length < 4){
       this.stile1 = "stile";

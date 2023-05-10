@@ -24,6 +24,7 @@ export class VisualizzaVichinghiComponent {
   }
 
   ngOnInit(){
+    this.cerca2 = "cerca2norm";
     this.dati.getDati().subscribe(dati=>{
         this.listaVichinghi = dati;
     });
@@ -32,6 +33,11 @@ export class VisualizzaVichinghiComponent {
       this.router.navigate(['/', 'Login']);
     }
   }
+
+  scrollTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   
   Dati(){
     return console.log(this.dati.getDati());
@@ -54,6 +60,7 @@ export class VisualizzaVichinghiComponent {
         console.log(this.currentVichingo);
         this.avanti = false;
         this.cerca2 = "stile2";
+        this.cerca2 = "cerca2norm";
       }
 
       if(!(this.listaVichinghi[index].firstName.toLowerCase() == this.currentVichingoName.toLowerCase() )){
@@ -64,6 +71,9 @@ export class VisualizzaVichinghiComponent {
         }
       }
 
+      if(this.currentVichingoName == ""){
+        this.cerca2 = "cerca2norm";
+      }
       
     }
 

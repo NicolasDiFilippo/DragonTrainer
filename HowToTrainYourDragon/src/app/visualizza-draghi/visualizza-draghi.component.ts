@@ -12,22 +12,29 @@ export class VisualizzaDraghiComponent {
 
   listaDraghi!: Drago[];
   currentDragon!: Drago;
-  
+
   currentDragonName: string = '';
   avanti = true;
   vedi: string;
   disattivo: boolean = false;
   cerca: string;
 
+  listaImmagini!: Drago[];
+
   constructor(public dati: DatiServizioService, private service: DatiServizioService, public router: Router) {
     this.vedi = "";
     this.cerca = "";
-
   }
 
   ngOnInit() {
+    this.cerca = "cerca";
     this.dati.getDati().subscribe(dati => {
       this.listaDraghi = dati;
+      for (let index = 0; index < dati.length; index++) {
+        this.listaImmagini = dati[index].image;
+        console.log(this.listaImmagini);
+      }
+      
     })
     
     if (this.service.getAbilita() == false) {
@@ -40,6 +47,9 @@ export class VisualizzaDraghiComponent {
     return console.log(this.dati.getDati());
   }
 
+  scrollTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   cambiaDrago() {
     if (this.currentDragonName == '') {
@@ -56,6 +66,7 @@ export class VisualizzaDraghiComponent {
         console.log(this.currentDragon);
         this.avanti = false;
         this.cerca = "stile2";
+        this.cerca = "cerca";
       }
 
       if (!(this.listaDraghi[index].name.toLowerCase() == this.currentDragonName.toLowerCase())) {
@@ -65,6 +76,10 @@ export class VisualizzaDraghiComponent {
         if (this.currentDragonName == '') {
           this.cerca = "stile2";
         }
+      }
+
+      if(this.currentDragonName == ""){
+        this.cerca = "cerca"
       }
     }
 

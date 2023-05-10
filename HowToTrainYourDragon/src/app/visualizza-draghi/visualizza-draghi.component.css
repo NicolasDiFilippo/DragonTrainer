@@ -37,6 +37,9 @@ a:hover{
     display: block;
 }
 
+.cerca{
+    border: 1px solid black;
+}
 
 .stile{
     border: 2px solid red;
@@ -51,3 +54,4 @@ a:hover{
 .stile2{
     border: 0px solid red;
 }
+

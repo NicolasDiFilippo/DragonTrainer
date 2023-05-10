@@ -70,7 +70,6 @@ export class VisualizzaDraghiComponent {
       }
 
       if (!(this.listaDraghi[index].name.toLowerCase() == this.currentDragonName.toLowerCase())) {
-
         this.currentDragon = this.listaDraghi[-1]; //indice per non visualizzare nulla 
         this.cerca = "stile";
         if (this.currentDragonName == '') {

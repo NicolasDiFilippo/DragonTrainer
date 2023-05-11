@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DatiServizioService } from '../cummon/dati-servizio.service';
-import { Drago } from '../cummon/drago';
+import { DatiServizioService } from '../common/dati-servizio.service';
+import { Drago } from '../common/drago';
 import { Router } from '@angular/router';
 
 @Component({

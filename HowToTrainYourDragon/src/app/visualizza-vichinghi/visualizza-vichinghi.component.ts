@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Vichingo } from '../cummon/vichingo';
-import { DatiServizioService } from '../cummon/dati-servizio.service';
+import { Vichingo } from '../common/vichingo';
+import { DatiServizioService } from '../common/dati-servizio.service';
 import { Router } from '@angular/router';
 
 @Component({

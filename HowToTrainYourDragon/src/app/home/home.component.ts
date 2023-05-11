@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DatiServizioService } from '../cummon/dati-servizio.service';
+import { DatiServizioService } from '../common/dati-servizio.service';
 
 @Component({
   selector: 'app-home',

@@ -54,7 +54,6 @@ export class VisualizzaVichinghiComponent {
     }
 
     for (let index = 26; index < this.listaVichinghi.length && this.avanti; index++){
-
       if(this.listaVichinghi[index].firstName.toLowerCase() == this.currentVichingoName.toLowerCase()){
         this.currentVichingo = this.listaVichinghi[index];
         console.log(this.currentVichingo);

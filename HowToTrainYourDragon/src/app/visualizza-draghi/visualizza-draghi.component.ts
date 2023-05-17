@@ -88,4 +88,19 @@ export class VisualizzaDraghiComponent {
     this.vedi = "vedi2";
   }
 
+
+  Dettagli(i: number){
+    this.currentDragon = this.listaDraghi[i - 1];
+    this.vedi = "no2";
+    this.currentDragonName = this.currentDragon.name;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log(this.currentDragon);
+  }
+
+  Chiudi(){
+    this.vedi = "vedi2";
+    this.currentDragonName = "";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
 }

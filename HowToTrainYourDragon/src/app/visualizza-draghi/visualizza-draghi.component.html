@@ -54,6 +54,9 @@
             <p class="card-text pb-2"><u>stealth</u>: {{currentDragon.stealth}}</p>
             <p class="card-text"><u>description</u>: {{currentDragon.description}}</p>
           </div>
+          <div class="position-relative">
+            <a (click)="Chiudi()" class="btn btn-primary ms-3 mb-1 p-2">close</a>
+          </div>
         </div>
       </div>
     </div>
@@ -62,62 +65,28 @@
   
   
   <div *ngIf="avanti">
-  
-  <div *ngFor="let dati of listaDraghi; let i = index">
-    <div *ngIf="i<=25">
-  
-      <div *ngIf="i%2 == 1" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
-        <div class="row">
-          <div class="col-md-4">
-            <img [src]="dati.image" class="img-fluid" alt="drago">
-          </div>
-          <div class="col-md-8 bg-light p-4 border-bottom border-danger">
-            <div class="card-body p-5 ">
-              <h5 class="card-title pb-4 fs-1"><b>{{dati.name}}</b></h5>
-              <p class="card-text pb-2"><u>species</u>: {{dati.species}}</p>
-              <p class="card-text pb-2"><u>class</u>: {{dati.classe}}</p>
-              <p class="card-text pb-2"><u>attack</u>: {{dati.attack}}</p>
-              <p class="card-text pb-2"><u>speed</u>: {{dati.speed}}</p>
-              <p class="card-text pb-2"><u>armor</u>: {{dati.armor}}</p>
-              <p class="card-text pb-2"><u>firepower</u>: {{dati.firepower}}</p>
-              <p class="card-text pb-2"><u>shotLimit</u>: {{dati.shotLimit}}</p>
-              <p class="card-text pb-2"><u>venom</u>: {{dati.venom}}</p>
-              <p class="card-text pb-2"><u>jawStrength</u>: {{dati.jawStrength}}</p>
-              <p class="card-text pb-2"><u>stealth</u>: {{dati.stealth}}</p>
-              <p class="card-text"><u>description</u>: {{dati.description}}</p>
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-3" *ngFor="let dati of listaDraghi; let i = index">
+          <div *ngIf="i<=25">
+          <div id="card" class="card text-center shadow bg-body-tertiary rounded" style="width: 18rem; height: 30rem;">
+            <img [src]="dati.image" class="card-img-top" id="logo" alt="non trovata">
+            <div class="card-body">
+              <h5 class="card-title p-2">{{dati.name}}</h5>
+              <div class="position-relative">
+                <a (click)="Dettagli(dati.id)" class="btn btn-primary mb-1 p-2">select</a>
+              </div>
+              
             </div>
           </div>
         </div>
-  
-      </div>
-  
-      <div *ngIf="i%2==0" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
-        <div class="row">
-          <div class="col-md-8 bg-light p-4 p-right-2 border-bottom border-danger">
-            <div class="card-body p-5">
-              <h5 class="card-title pb-4 fs-1"><b>{{dati.name}}</b></h5>
-              <p class="card-text pb-2"><u>species</u>: {{dati.species}}</p>
-              <p class="card-text pb-2"><u>class</u>: {{dati.classe}}</p>
-              <p class="card-text pb-2"><u>attack</u>: {{dati.attack}}</p>
-              <p class="card-text pb-2"><u>speed</u>: {{dati.speed}}</p>
-              <p class="card-text pb-2"><u>armor</u>: {{dati.armor}}</p>
-              <p class="card-text pb-2"><u>firepower</u>: {{dati.firepower}}</p>
-              <p class="card-text pb-2"><u>shotLimit</u>: {{dati.shotLimit}}</p>
-              <p class="card-text pb-2"><u>venom</u>: {{dati.venom}}</p>
-              <p class="card-text pb-2"><u>jawStrength</u>: {{dati.jawStrength}}</p>
-              <p class="card-text pb-2"><u>stealth</u>: {{dati.stealth}}</p>
-              <p class="card-text"><u>description</u>: {{dati.description}}</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img [src]="dati.image" class="img-fluid" alt="drago">
-          </div>
-        </div>
-  
       </div>
     </div>
+
   </div>
-  </div>
+</div>
   
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-white text-muted">

@@ -17,6 +17,7 @@ export class VisualizzaVichinghiComponent {
     vedi: string;
     disattivo: boolean = false;
     cerca2: string;
+    cartaInv: boolean = false;
 
   constructor(public dati:DatiServizioService, public service:DatiServizioService, public router:Router){
     this.vedi = "";
@@ -27,8 +28,9 @@ export class VisualizzaVichinghiComponent {
     this.cerca2 = "cerca2norm";
     this.dati.getDati().subscribe(dati=>{
         this.listaVichinghi = dati;
+        console.log(this.listaVichinghi);
     });
-    
+
     if(this.service.getAbilita() == false){
       this.router.navigate(['/', 'Login']);
     }
@@ -83,5 +85,19 @@ export class VisualizzaVichinghiComponent {
     this.vedi = "vedi2";
   }
 
+
+  Dettagli(i: number){
+    this.currentVichingo = this.listaVichinghi[i - 1];
+    this.vedi = "no2";
+    this.currentVichingoName = this.currentVichingo.firstName;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log(this.currentVichingo);
+  }
+
+  Chiudi(){
+    this.vedi = "vedi2";
+    this.currentVichingoName = "";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
 }

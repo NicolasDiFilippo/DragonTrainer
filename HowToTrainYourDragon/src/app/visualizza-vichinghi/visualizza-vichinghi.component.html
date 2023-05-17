@@ -1,5 +1,5 @@
 <div class="mt-2"></div>
-<nav class="navbar navbar-expand-lg mb-1 ">
+<nav class="navbar navbar-expand-lg mb-1">
   <div class="container-fluid">
     <div class="position-absolute top-100 start-50 translate-middle mt-1 collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ">
@@ -7,12 +7,13 @@
           <a class="nav-link mt-4" id="scritta" aria-current="page" routerLink="/Home"><b> HOME </b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mt-4" id="scritta" routerLink="/Draghi" ><b> DRAGONS </b> </a>
+          <a class="nav-link mt-4" id="scritta" routerLink="/Draghi"><b> DRAGONS </b> </a>
         </li>
         <li class="nav-item">
           <a class="nav-link mt-4" id="scritta" (click)="Torna()"><b> VIKINGS </b> </a>
         </li>
-        <input class="nav-link mt-4" [ngClass]="cerca2" type="text" [(ngModel)]="currentVichingoName" placeholder="Search by name..." (disabled)="disattivo" (change)="cambiaVichingo()">
+        <input class="nav-link mt-4" [ngClass]="cerca2" type="text" [(ngModel)]="currentVichingoName"
+          placeholder="Search by name..." (disabled)="disattivo" (change)="cambiaVichingo()">
       </ul>
     </div>
   </div>
@@ -39,6 +40,9 @@
           <p class="card-text pb-2"><u>weapon</u>: {{currentVichingo.weapon}}</p>
           <p class="card-text pb-2"><u>location</u>: {{currentVichingo.location}}</p>
         </div>
+        <div class="position-relative">
+          <a (click)="Chiudi()" class="btn btn-primary ms-3 mb-1 p-2">close</a>
+        </div>
       </div>
     </div>
 
@@ -47,51 +51,23 @@
 </div>
 
 <div *ngIf="avanti">
-
-<div *ngFor="let dati of listaVichinghi; let i = index">
-  <div *ngIf="i>=26">
-    <div *ngIf="i%2 == 1" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
-      <div class="row">
-        <div class="col-md-4">
-          <img [src]="dati.imageV" class="img-fluid" alt="drago">
-        </div>
-        <div class="col-md-8 bg-light p-4 border-bottom border-danger">
-          <div class="card-body p-5 ">
-            <h5 class="card-title pb-4 fs-1"><b>{{dati.firstName}} {{dati.lastName}}</b></h5>
-            <p class="card-text pb-2"><u>tribe</u>: {{dati.tribe}}</p>
-            <p class="card-text pb-2"><u>gender</u>: {{dati.gender}}</p>
-            <p class="card-text pb-2"><u>height</u>: {{dati.height}}</p>
-            <p class="card-text pb-2"><u>eyes</u>: {{dati.eyes}}</p>
-            <p class="card-text pb-2"><u>hair</u>: {{dati.hair}}</p>
-            <p class="card-text pb-2"><u>weapon</u>: {{dati.weapon}}</p>
-            <p class="card-text pb-2"><u>location</u>: {{dati.location}}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let dati of listaVichinghi; let i = index">
+        <div *ngIf="i>=26">
+          <div id="card" class="card text-center shadow bg-body-tertiary rounded" style="width: 18rem; height: 30rem;">
+            <img [src]="dati.imageV" class="card-img-top" id="logo" alt="non trovata">
+            <div class="card-body">
+              <h5 class="card-title p-2">{{dati.firstName}}</h5>
+              <div class="position-relative">
+                <a (click)="Dettagli(dati.id)" class="btn btn-primary mb-1 p-2">select</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div *ngIf="i%2==0" class="w-90 align-items-center" id="sfondoImg" style="max-width: 100%;">
-      <div class="row">
-        <div class="col-md-8 bg-light p-4 p-right-2 border-bottom border-danger">
-          <div class="card-body p-5">
-            <h5 class="card-title pb-4 fs-1"><b>{{dati.firstName}} {{dati.lastName}}</b></h5>
-            <p class="card-text pb-2"><u>tribe</u>: {{dati.tribe}}</p>
-            <p class="card-text pb-2"><u>gender</u>: {{dati.gender}}</p>
-            <p class="card-text pb-2"><u>height</u>: {{dati.height}}</p>
-            <p class="card-text pb-2"><u>eyes</u>: {{dati.eyes}}</p>
-            <p class="card-text pb-2"><u>hair</u>: {{dati.hair}}</p>
-            <p class="card-text pb-2"><u>weapon</u>: {{dati.weapon}}</p>
-            <p class="card-text pb-2"><u>location</u>: {{dati.location}}</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img [src]="dati.imageV" class="img-fluid" alt="drago">
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
 </div>
 
 <!-- Footer -->
@@ -103,9 +79,6 @@
       <span>DRAGON TRAINER</span>
     </div>
   </section>
-
-
-
   <section class="">
     <div class="container text-center text-md-start mt-5">
 
@@ -117,7 +90,8 @@
             <i class="fas fa-gem me-3 text-secondary"></i>DRAGON TRAINER
           </h6>
           <p>
-            On this site you will be able to access all information relating to dragons and Vikings from the world of How to Train Your Dragon
+            On this site you will be able to access all information relating to dragons and Vikings from the world of
+            How to Train Your Dragon
           </p>
         </div>
 
@@ -165,9 +139,9 @@
     <a class="text-reset fw-bold">Nicolas Di Filippo</a>
 
     <div class="ml-5 bottom-0 end-0">
-      <button (click)="scrollTop()" type="button" class="ml-5 btn btn-secondary p-2" >
+      <button (click)="scrollTop()" type="button" class="ml-5 btn btn-secondary p-2">
         ↑
-    </button>
+      </button>
     </div>
   </div>
 

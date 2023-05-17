@@ -78,5 +78,10 @@ export class VisualizzaVichinghiComponent {
 
   }
 
+  Torna(){
+    this.avanti = true;
+    this.vedi = "vedi2";
+  }
+
 
 }

@@ -17,6 +17,8 @@ export class LoginComponent {
   testoBottone2: string;
   okNome: boolean = false;
   okPass: boolean = false;
+
+  
   constructor(public service:DatiServizioService, public router:Router){
     this.stile2 = "";
     this.stile1 = "";
@@ -26,6 +28,7 @@ export class LoginComponent {
   }
 
   ngOnInit(){}
+  
   
   abilita()
   {

@@ -83,6 +83,9 @@ export class VisualizzaDraghiComponent {
     }
 
   }
-
+  Torna(){
+    this.avanti = true;
+    this.vedi = "vedi2";
+  }
 
 }

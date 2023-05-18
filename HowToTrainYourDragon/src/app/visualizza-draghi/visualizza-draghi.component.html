@@ -71,12 +71,12 @@
         
         <div class="col-md-3" *ngFor="let dati of listaDraghi; let i = index">
           <div *ngIf="i<=25">
-          <div id="card" class="card text-center shadow bg-body-tertiary rounded" style="width: 18rem; height: 30rem;">
+          <div id="card" class="card text-center" style="width: 18rem; height: 30rem;">
             <img [src]="dati.image" class="card-img-top" id="logo" alt="non trovata">
             <div class="card-body">
-              <h5 class="card-title p-2">{{dati.name}}</h5>
+              <h5 class="card-title p-2"><b>{{dati.name}}</b></h5>
               <div class="position-relative">
-                <a (click)="Dettagli(dati.id)" class="btn btn-primary mb-1 p-2">select</a>
+                <a (click)="Dettagli(dati.id)" class="btn btn-primary mb-1 p-2 mt-5">select</a>
               </div>
               
             </div>

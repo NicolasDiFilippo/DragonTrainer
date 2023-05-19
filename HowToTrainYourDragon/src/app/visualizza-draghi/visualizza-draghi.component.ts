@@ -10,49 +10,49 @@ import { Router } from '@angular/router';
 })
 export class VisualizzaDraghiComponent {
 
+                                                       //----VARIABILI----
   listaDraghi!: Drago[];
   currentDragon!: Drago;
-
   currentDragonName: string = '';
   avanti = true;
   vedi: string;
   disattivo: boolean = false;
   cerca: string;
-
   listaImmagini!: Drago[];
 
+  //costruttore
   constructor(public dati: DatiServizioService, private service: DatiServizioService, public router: Router) {
     this.vedi = "";
     this.cerca = "";
   }
 
+                        //----------------------------------------------------METODI----------------------------------------------------
+
+  //metodo che viene eseguito quando la pagina è stata caricata
   ngOnInit() {
     this.cerca = "cerca";
-    this.dati.getDati().subscribe(dati => {
+    this.dati.getDati().subscribe(dati => { //assegno alla variabile locale la lista di draghi
       this.listaDraghi = dati;
-      for (let index = 0; index < dati.length; index++) {
-        this.listaImmagini = dati[index].image;
-        console.log(this.listaImmagini);
-      }
-      
     })
     
     if (this.service.getAbilita() == false) {
-      this.router.navigate(['/', 'Login']);
+      this.router.navigate(['/', 'Login']); //se non sei loggato non puoi accedere a questa pagina
     }
   }
 
+  //ritorna i dati
   Dati() {
-
     return console.log(this.dati.getDati());
   }
 
+  //scrolla fino all'inizio della pagina
   scrollTop(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  //metodo che cambia il drago visualizzato in base al nome inserito nella barra di ricerca
   cambiaDrago() {
-    if (this.currentDragonName == '') {
+    if (this.currentDragonName == '') { //se il nome inserito è vuoto, non visualizza nulla
       this.avanti = true;
       this.vedi = "vedi2";
       this.cerca = "stile2";
@@ -60,8 +60,10 @@ export class VisualizzaDraghiComponent {
       this.vedi = "no";
     }
 
+    //ciclo che scorre la lista di draghi
     for (let index = 0; index < this.listaDraghi.length && this.avanti; index++) {
-      if (this.listaDraghi[index].name.toLowerCase() == this.currentDragonName.toLowerCase()) {
+      //se il nome inserito è uguale a quello di un drago, visualizza il drago
+      if (this.listaDraghi[index].name.toLowerCase() == this.currentDragonName.toLowerCase()) { 
         this.currentDragon = this.listaDraghi[index];
         console.log(this.currentDragon);
         this.avanti = false;
@@ -69,26 +71,29 @@ export class VisualizzaDraghiComponent {
         this.cerca = "cerca";
       }
 
+      //se il nome inserito non è uguale a quello di un drago, non visualizza nulla
       if (!(this.listaDraghi[index].name.toLowerCase() == this.currentDragonName.toLowerCase())) {
         this.currentDragon = this.listaDraghi[-1]; //indice per non visualizzare nulla 
         this.cerca = "stile";
-        if (this.currentDragonName == '') {
+        if (this.currentDragonName == '') { //se il nome inserito è vuoto, non visualizza nulla
           this.cerca = "stile2";
         }
       }
-
       if(this.currentDragonName == ""){
         this.cerca = "cerca"
       }
     }
 
   }
+
+  //metodo che visualizza la lista di draghi
   Torna(){
     this.avanti = true;
     this.vedi = "vedi2";
   }
 
 
+  //metodo che visualizza i dettagli di un drago
   Dettagli(i: number){
     this.currentDragon = this.listaDraghi[i - 1];
     this.vedi = "no2";
@@ -97,6 +102,7 @@ export class VisualizzaDraghiComponent {
     console.log(this.currentDragon);
   }
 
+  //metodo che chiude i dettagli di un drago
   Chiudi(){
     this.vedi = "vedi2";
     this.currentDragonName = "";
